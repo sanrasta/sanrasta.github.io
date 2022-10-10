@@ -23,3 +23,5 @@ export const SliderData = [
     },
 
 ];
+
+export default SliderData
