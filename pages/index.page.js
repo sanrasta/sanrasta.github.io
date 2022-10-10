@@ -25,7 +25,7 @@ export default function Home() {
           message2='Efficient assessment of your insurance policy guaranteeing you will receive a substantial recovery from a claim.'
            />
         <About />
-        
+        <Instagram />
         
         <Slider slides={SliderData}/>
         
