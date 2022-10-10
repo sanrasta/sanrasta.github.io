@@ -83,7 +83,8 @@ export const Form = () => {
                     className='border shadow-lg p-3 w-full my-2'
                     name="city"
                     type="text"
-                    placeholder='City'
+                    required
+                    placeholder='Address'
                     value={city}
                     onChange={e => setCity(e.target.value)} />
                     <input
@@ -100,6 +101,13 @@ export const Form = () => {
                     name="subject"
                     type="text"
                     placeholder='How can we help?'
+                    value={subject}
+                    onChange={e => setSubject(e.target.value)} />
+                     <input
+                    className='border shadow-lg p-3 w-full my-2'
+                    name="policy"
+                    type="text"
+                    placeholder='Insurance Policy or Company'
                     value={subject}
                     onChange={e => setSubject(e.target.value)} />
                 <textarea
