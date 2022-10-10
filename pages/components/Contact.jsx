@@ -21,7 +21,9 @@ export const Form = () => {
     const [loading, setLoading] = useState(false)
 
     const handleSubmit = (e) => {
+
         e.preventDefault()
+        
         setLoading(true)
 
        
@@ -49,8 +51,8 @@ export const Form = () => {
 
     return (
 
-        <div className='max-w-[1240px] m-auto p-4 h-screen'>
-            <h1 id="contact" className='text-2xl font-bold text-center p-4'>Let's work together</h1>
+        <div id='contact' className='max-w-[1240px] m-auto p-4 h-screen'>
+            <h1 className='text-2xl font-bold text-center p-4'>Let's work together</h1>
             <form
                 method="post"
                 action='https://script.google.com/macros/s/AKfycbz0Jrlg6uSsmSd4UdZzaRjjOPGRkJOQCtkMp8htB2xlfRYuLqiaDCuhrcbb1JF31hEy/exec'
@@ -63,6 +65,7 @@ export const Form = () => {
                         className='border shadow-lg p-3'
                         name="name"
                         type="text"
+                        required
                         placeholder='Name'
                         value={name}
                         onChange={e => setName(e.target.value)} />
@@ -70,6 +73,7 @@ export const Form = () => {
                         className='border shadow-lg p-3'
                         name="email"
                         type="email"
+                        required
                         placeholder='Email'
                         value={email}
                         onChange={e => setEmail(e.target.value)} />
@@ -85,7 +89,8 @@ export const Form = () => {
                     <input
                     className='border shadow-lg p-3 w-full my-2'
                     name="phone"
-                    type="text"
+                    type="number"
+                    required
                     placeholder='Phone Number'
                     value={phone}
                     onChange={e => setPhone(e.target.value)} />
