@@ -1,10 +1,10 @@
 import React from 'react'
-import IgImg1 from '/Users/santiagoramirez/nextjs_landing_page_excel/public/hhh.png'
-import IgImg2 from '/Users/santiagoramirez/nextjs_landing_page_excel/public/img100.png'
-import IgImg3 from '/Users/santiagoramirez/nextjs_landing_page_excel/public/img9.jpg'
-import IgImg4 from '/Users/santiagoramirez/nextjs_landing_page_excel/public/img15.png'
-import IgImg5 from '/Users/santiagoramirez/nextjs_landing_page_excel/public/img11.webp'
-import IgImg6 from '/Users/santiagoramirez/nextjs_landing_page_excel/public/img12.webp'
+import IgImg1 from '/Users/santiagoramirez/landing_githubpages/public/hhh.png'
+import IgImg2 from '/Users/santiagoramirez/landing_githubpages/public/img100.png'
+import IgImg3 from '/Users/santiagoramirez/landing_githubpages/public/img9.jpg'
+import IgImg4 from '/Users/santiagoramirez/landing_githubpages/public/img15.png'
+import IgImg5 from '/Users/santiagoramirez/landing_githubpages/public/img11.webp'
+import IgImg6 from '/Users/santiagoramirez/landing_githubpages/public/img12.webp'
 import InstagramImg from './InstagramImg'
 
 function Instagram() {
