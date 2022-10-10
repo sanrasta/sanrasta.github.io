@@ -1,8 +1,8 @@
-import emailjs from "emailjs-com"
 import React, { useRef, useState } from 'react'
 import Hero from './Hero'
 
-export const ContactUs = () => {
+
+export const Form = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -12,44 +12,43 @@ export const ContactUs = () => {
 
 
 
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-        if (name && email) {
-            emailjs.sendForm('gmail', 'template_fodsg2u', form.current, 'pBshowc_Ps9mUDt72')
-                .then((result) => {
-                    console.log(result.text);
-                }, (error) => {
-                    console.log(error.text);
-                });
-                setIsFormEmpty('')
-        }
-        
-        else{
-            setIsFormEmpty("PLEASE Fill OUT NAME AND EMAIL BEFORE SUBMITTING THE FORM")
-        }
 
+    
+    const formRef = useRef(null)
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbw2bW9IH2wawww2t08OFFG54SlHK94l0E0h_wtn7q35li-7W5Ut8kRr-k_jPUGeHhMe1g/exec"
+    const [loading, setLoading] = useState(false)
 
-        setName('');
-        setEmail('');
-        setMessage('');
-        setSubject('');
-        
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setLoading(true)
 
-    };
+        fetch(scriptUrl, {
+            method: 'POST',
+            body: new FormData(formRef.current),
 
+        }).then(res => {
+            console.log("SUCCESSFULLY SUBMITTED")
+            setLoading(false)
+        })
+            .catch(err => console.log(err))
 
+            setName('');
+            setSubject('');
+            setEmail('');
+            setMessage('');
+    }
 
 
     return (
-        
+
         <div className='max-w-[1240px] m-auto p-4 h-screen'>
             <h1 id="contact" className='text-2xl font-bold text-center p-4'>Let's work together</h1>
             <form
-                ref={form}
-                onSubmit={sendEmail}
+                method="post"
+                ref={formRef}
+                onSubmit={handleSubmit}
+                name="google-sheet"
                 className='max-w-[600px] m-auto'>
-
                 <div className='grid grid-cols-2 gap-2'>
                     <input
                         className='border shadow-lg p-3'
@@ -80,7 +79,7 @@ export const ContactUs = () => {
                     placeholder="Message"
                     value={message}
                     onChange={e => setMessage(e.target.value)} />
-                <p 
+                <p
                     className="p-4 text-red-600">{isFormEmpty}</p>
                 <input
                     className='border shadow-lg p-3 w-full mt-2 hover:shadow-black'
@@ -89,10 +88,10 @@ export const ContactUs = () => {
                 />
             </form>
         </div>
-        
+
 
     )
+
 }
 
-
-export default ContactUs
+export default Form

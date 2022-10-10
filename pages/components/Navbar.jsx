@@ -14,7 +14,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const changeColor = () => {
-            if(window.scrollY >=90){
+            if(window.scrollY >=30){
                 setColor('#ffffff')
                 setTextColor('#000000')
             } else {
@@ -45,7 +45,7 @@ const Navbar = () => {
                     <Link href='/work'>Work</Link>
                 </li>
                 <li className='p-4  hover:text-gray-500'>
-                    <Link href='/#contact'>Contact</Link>
+                    <Link href='/#contact'>Contact Us</Link>
                 </li>
             </ul>
             
