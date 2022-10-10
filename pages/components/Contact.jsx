@@ -6,36 +6,44 @@ export const Form = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [city, setCity] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const [phone, setPhone] = useState('');
     const [isFormEmpty, setIsFormEmpty] = useState('');
 
 
 
 
-    
+
     const formRef = useRef(null)
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbw2bW9IH2wawww2t08OFFG54SlHK94l0E0h_wtn7q35li-7W5Ut8kRr-k_jPUGeHhMe1g/exec"
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbwYGia3v2_hkt_H0Oc-Adq1ATbcjuOdZJqFMNdwweKdcBbbnET1G_PBtoZbjF-148Yo/exec"
     const [loading, setLoading] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
 
-        fetch(scriptUrl, {
-            method: 'POST',
-            body: new FormData(formRef.current),
+       
+            fetch(scriptUrl, {
+                method: 'POST',
+                body: new FormData(formRef.current),
 
-        }).then(res => {
-            console.log("SUCCESSFULLY SUBMITTED")
-            setLoading(false)
-        })
-            .catch(err => console.log(err))
-
-            setName('');
-            setSubject('');
-            setEmail('');
-            setMessage('');
+            }).then(res => {
+                console.log("SUCCESSFULLY SUBMITTED")
+                setIsFormEmpty("Submitted!")
+                setLoading(false)
+            })
+                .catch(err => console.log(err))
+        
+       
+        setName('');
+        setSubject('');
+        setCity('');
+        setPhone('');
+        setEmail('');
+        setMessage('');
+        
     }
 
 
@@ -45,6 +53,7 @@ export const Form = () => {
             <h1 id="contact" className='text-2xl font-bold text-center p-4'>Let's work together</h1>
             <form
                 method="post"
+                action='https://script.google.com/macros/s/AKfycbz0Jrlg6uSsmSd4UdZzaRjjOPGRkJOQCtkMp8htB2xlfRYuLqiaDCuhrcbb1JF31hEy/exec'
                 ref={formRef}
                 onSubmit={handleSubmit}
                 name="google-sheet"
@@ -65,18 +74,35 @@ export const Form = () => {
                         value={email}
                         onChange={e => setEmail(e.target.value)} />
                 </div>
+                <div className='grid grid-cols-2 gap-2'>
+                <input
+                    className='border shadow-lg p-3 w-full my-2'
+                    name="city"
+                    type="text"
+                    placeholder='City'
+                    value={city}
+                    onChange={e => setCity(e.target.value)} />
+                    <input
+                    className='border shadow-lg p-3 w-full my-2'
+                    name="phone"
+                    type="text"
+                    placeholder='Phone Number'
+                    value={phone}
+                    onChange={e => setPhone(e.target.value)} />
+</div>
                 <input
                     className='border shadow-lg p-3 w-full my-2'
                     name="subject"
                     type="text"
-                    placeholder='Subject'
+                    placeholder='How can we help?'
                     value={subject}
                     onChange={e => setSubject(e.target.value)} />
                 <textarea
                     className='border shadow-lg p-3 w-full'
                     name="message"
+                    type='text'
                     cols="30" rows="10"
-                    placeholder="Message"
+                    placeholder="Description"
                     value={message}
                     onChange={e => setMessage(e.target.value)} />
                 <p
