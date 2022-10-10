@@ -52,7 +52,7 @@ export const Form = () => {
     return (
 
         <div id='contact' className='max-w-[1240px] m-auto p-4 h-screen'>
-            <h1 className='text-2xl font-bold text-center p-4'>Let&apos;s work together</h1>
+            <h1 className='text-2xl font-bold text-center p-4'>{"Let's work together"}</h1>
             <form
                 method="post"
                 action='https://script.google.com/macros/s/AKfycbz0Jrlg6uSsmSd4UdZzaRjjOPGRkJOQCtkMp8htB2xlfRYuLqiaDCuhrcbb1JF31hEy/exec'
