@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useRef, useState } from 'react'
 import Hero from './Hero'
 
@@ -33,8 +34,9 @@ export const Form = () => {
             body: new FormData(formRef.current),
 
         }).then(res => {
+            setIsFormEmpty("FORM SUBMITTED SUCCESSFULLY")
             console.log("SUCCESSFULLY SUBMITTED")
-            setIsFormEmpty("Submitted!")
+            
             setLoading(false)
         })
             .catch(err => console.log(err))
@@ -126,12 +128,14 @@ export const Form = () => {
                     onChange={e => setDescription(e.target.value)} />
 
                 <p
-                    className="p-4 text-red-600">{isFormEmpty}</p>
+                    className="p-4 text-green-500 align-middle text-center font-bold">{isFormEmpty}</p>
 
                 <input
                     className='border shadow-lg p-3 w-full mt-2 hover:shadow-black'
                     value="Send"
                     type='submit'
+                    
+                  
                 />
 
             </form>
