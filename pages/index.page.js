@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import About from './components/About'
-import BarGraph from './components/BarGraph'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
