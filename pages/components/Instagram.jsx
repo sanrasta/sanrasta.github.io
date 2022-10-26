@@ -3,7 +3,7 @@ import IgImg1 from './../../public/hhh.png'
 import IgImg2 from './../../public/ruin_commercial.jpg'
 import IgImg3 from './../../public/img9.jpg'
 import IgImg4 from './../../public/ruin_house.jpg'
-import IgImg5 from './../../public/ruin_earth.jpg'
+import IgImg5 from './../../public/ruin_earth.JPG'
 import IgImg6 from './../../public/img12.webp'
 import InstagramImg from './InstagramImg'
 
