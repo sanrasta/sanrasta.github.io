@@ -22,7 +22,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div id='galleryy' className='max-w-[1240px] font-bold mx-auto'>
-      <h1 className=' text-2xl text-center p-4'>We undestand things happen.</h1>
+      <h1 className=' text-2xl text-center p-4'>We understand things happen.</h1>
       <h1 className='text-2xl text-center p-4 bottom-3'>Stay calm, let us deal with the unexpected.</h1>
       <div className='relative flex justify-center p-4'>
 
