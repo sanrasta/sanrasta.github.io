@@ -55,7 +55,7 @@ export const Form = () => {
 
     return (
 
-        <div id='contact' className='max-w-[1240px] m-auto p-4 h-screen'>
+        <div id='contact' className='max-w-[1240px] m-auto p-4 h-screen relative'>
             <h1 className='text-2xl font-bold text-center p-4'>Let&apos;s work together</h1>
             <form
                 method="post"

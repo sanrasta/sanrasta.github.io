@@ -2,10 +2,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='container-full'>
+    <div className='container-fluid'>
 
       <footer className="bg-gray-100 ">
-        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 position-relative">
           <div className='flex justify-center font-bold text-5xl'>YourClaim US</div>
           <div className='flex justify-center font-semibold text-1xl'>Insurance Agency Service Support</div>
           <div className="flex justify-center">
