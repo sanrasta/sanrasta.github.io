@@ -3,7 +3,7 @@ import React from 'react'
 const Timeline = ({}) => {
     return(
         <div className='max-w-[1240px] mx-auto text-center py-24' >
-      <p className='text-2xl font-bold p-8 gap-8'> It's a simple process that only requires your utility bill to get started.
+      <p className='text-2xl font-bold p-8 gap-8'> It is a simple process that only requires your utility bill to get started.
     </p>
 <div className="container bg-gray-200 mx-auto w-full h-full p-4 gap-2">
   <div className="relative wrap overflow-hidden p-10 h-full">
