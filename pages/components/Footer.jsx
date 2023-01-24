@@ -6,8 +6,8 @@ function Footer() {
 
       <footer className="bg-gray-100 ">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 position-relative">
-          <div className='flex justify-center font-bold text-5xl'>YourClaim US</div>
-          <div className='flex justify-center font-semibold text-1xl'>Insurance Agency Service Support</div>
+          <div className='flex justify-center font-bold text-5xl'>Solar Solutions</div>
+          <div className='flex justify-center font-semibold text-1xl'>Helping our customers have a better quality of life</div>
           <div className="flex justify-center">
 
             <svg

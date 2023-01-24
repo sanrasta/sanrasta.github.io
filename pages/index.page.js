@@ -8,6 +8,7 @@ import Instagram from './components/Instagram'
 import Slider from './components/Slider'
 import Deck from './components/Deck.jsx'
 import { SliderData } from './components/SliderData'
+import Timeline from './components/timeline'
 
 
 
@@ -34,7 +35,7 @@ export default function Home() {
         
         <Instagram />
         
-    
+        <Timeline /> 
         <Contact /> 
         <Footer />
         </div>
