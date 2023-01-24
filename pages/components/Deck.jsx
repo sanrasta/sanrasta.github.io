@@ -27,7 +27,7 @@ to pay more next year than they are today.</p>
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
             <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p className="leading-relaxed">It's a simple process, we collects your utility bill so we can design a custom savings proposal for your home.</p>
+            <p className="leading-relaxed">It is a simple process, we collects your utility bill so we can design a custom savings proposal for your home.</p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ to pay more next year than they are today.</p>
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">{/*
             <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>*/}
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-            <p className="leading-relaxed">It is well-documented that solar increases the value of your home. It is that it's a home investment that actually produces income.</p>
+            <p className="leading-relaxed">It is well-documented that solar increases the value of your home. It is that it is a home investment that actually produces income.</p>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ to pay more next year than they are today.</p>
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">{/*
             <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>*/}
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-            <p className="leading-relaxed">Each KW you produce is a KW that you don’t have to purchase from your electric company. Now think about all the KW you will produce in the future.</p>
+            <p className="leading-relaxed">Each KW you produce is a KW that you do not have to purchase from your electric company. Now think about all the KW you will produce in the future.</p>
           </div>
         </div>
       </div>
