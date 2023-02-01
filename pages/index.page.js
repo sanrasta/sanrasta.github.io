@@ -28,7 +28,7 @@ export default function Home() {
           message1=
           'As sustainable energy is on the horizon.' 
           message2=
-          ' Our purpose is to lower the carbon footprint by providing accessible solar solution.' 
+          ' Our purpose is to lower the carbon footprint by providing accessible solar solution,' 
           
           />
         

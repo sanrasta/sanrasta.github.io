@@ -21,8 +21,9 @@ function Footer() {
           </div>
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-            &quot;This is a solicitation for business. If you have a claim for insured property loss or damage and you are satisfied with the payment by your insurance company, you may disregard this advertisement&quot;
+            This is a solicitation for business.<br></br>&quot;If you have a claim for insured property loss or damage and you are satisfied with the payment by your insurance company, you may disregard this advertisement.&quot;
           </p>
+          
           {/*
           <nav class="mt-12" aria-labelledby="footer-navigation">
             <h2 class="sr-only" id="footer-navigation">Footer navigation</h2>
