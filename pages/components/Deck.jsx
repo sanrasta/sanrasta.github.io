@@ -47,7 +47,7 @@ function Deck(){
           src="https://images.unsplash.com/photo-1578439297699-eb414262c2de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80" />
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Clean Energy</h1>
-            <p className="leading-relaxed">Solar, such an amazing energy.<br></br> Each installation produces clean energy for 30-40 years. Decreasing your home carbon footprint.</p>
+            <p className="leading-relaxed">Solar, such an amazing energy.<br></br> Each installation produces clean energy for 30-40 years, decreasing your home&apos;s carbon footprint.</p>
           </div>
         </div>
       </div>
@@ -60,8 +60,8 @@ function Deck(){
             src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" />
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">{/*
             <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>*/}
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-            <p className="leading-relaxed">It is well-documented that solar increases the value of your home. It is that it is a home investment that actually produces income.</p>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Increased Home Value</h1>
+            <p className="leading-relaxed">It is well-documented that solar adds value to the property.<br></br> It is a home investment that actually produces income.</p>
           </div>
         </div>
       </div>
