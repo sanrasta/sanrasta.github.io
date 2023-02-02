@@ -87,8 +87,8 @@ function Deck(){
             src="https://images.unsplash.com/photo-1463173904305-ba479d2123b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2158&q=80" />
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
            {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>*/}
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-            <p className="leading-relaxed">Another amazing reason to go solar in your home today is so that you can get the economic benefits NOW, and get more for the sale of your home TOMORROW.</p>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Incentives</h1>
+            <p className="leading-relaxed">Find out if you are elegible for a govermental program in order to get the help needed to equip your home with the ultimate technology in solar solutions.</p>
           </div>
         </div>
       </div>
