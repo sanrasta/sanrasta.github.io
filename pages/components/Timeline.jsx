@@ -49,7 +49,7 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
       </div>
-      <div className="order-1 bg-[#E9897E] rounded-lg shadow-xl w-5/12 px-4 py-4">
+      <div className="order-1 bg-[#C48A69] rounded-lg shadow-xl w-5/12 px-4 py-4">
         <h3 className="mb-3 font-bold text-white text-xl">Sign<br></br>Contract</h3>
       </div>
     </div>
@@ -60,7 +60,7 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto font-semibold text-lg text-white">5</h1>
       </div>
-      <div className="order-1 bg-[#A0DAA9] rounded-lg shadow-xl w-5/12 px-4 py-4">
+      <div className="order-1 bg-[#4B5335] rounded-lg shadow-xl w-5/12 px-4 py-4">
         <h3 className="mb-3 font-bold text-gray-800 text-xl">Get<br></br>Started</h3>
         
       </div>
