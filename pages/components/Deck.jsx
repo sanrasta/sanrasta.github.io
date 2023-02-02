@@ -73,9 +73,8 @@ function Deck(){
             className="absolute inset-0 w-full h-full object-cover object-center" 
             src="https://images.unsplash.com/photo-1637100533381-d7e827eafd3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
-            <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-            <p className="leading-relaxed">Each KW you produce is a KW that you do not have to purchase from your electric company. </p>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">KW</h1>
+            <p className="leading-relaxed">Each kilowatt your home solar system produces is a kilowatt that you do not have to purchase from your current grid powered utility company.</p>
           </div>
         </div>
       </div>
