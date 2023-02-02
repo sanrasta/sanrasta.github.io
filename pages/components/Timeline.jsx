@@ -14,7 +14,7 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
       </div>
-      <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+      <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-6">
         <h3 className="mb-3 font-bold text-gray-800 text-xl">Collect Your Energy Bill</h3>
         
       </div>
@@ -26,8 +26,8 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
       </div>
-      <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-white text-xl">Review a Custom Proposal</h3>
+      <div className="order-1 bg-[#DFCFBE] rounded-lg shadow-xl w-5/12 px-4 py-4">
+        <h3 className="mb-3 font-bold text-white text-xl">Review<br></br> A Custom Proposal</h3>
       </div>
     </div>
     
@@ -38,8 +38,8 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
       </div>
-      <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-gray-800 text-xl">Select the Best Plan</h3>
+      <div className="order-1 bg-[#98B4D4] rounded-lg shadow-xl w-5/12 px-4 py-4">
+        <h3 className="mb-3 font-bold text-gray-800 text-xl">Select<br></br>The Best Plan</h3>
       </div>
     </div>
 
@@ -49,8 +49,8 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
       </div>
-      <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-white text-xl">Sign contract</h3>
+      <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-4 py-4">
+        <h3 className="mb-3 font-bold text-white text-xl">Sign<br></br>Contract</h3>
       </div>
     </div>
   </div>
@@ -60,14 +60,14 @@ const Timeline = ({}) => {
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto font-semibold text-lg text-white">5</h1>
       </div>
-      <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-gray-800 text-xl">Get started</h3>
+      <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-4 py-4">
+        <h3 className="mb-3 font-bold text-gray-800 text-xl">Get<br></br>Started</h3>
         
       </div>
     </div>
 </div>
 </div>
-    );
+);
 };
 
 export default Timeline
