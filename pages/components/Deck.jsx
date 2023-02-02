@@ -6,7 +6,7 @@ function Deck(){
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">To each their own!</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">There are many reasons why thousands of homeowners have switched to solar.</p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">There are plenty of reasons why thousands of homeowners have switched to solar.</p>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Hear their stories! </p>
     </div>
     <div className="flex flex-wrap -m-4">
@@ -19,8 +19,8 @@ function Deck(){
           src={'https://images.unsplash.com/photo-1623701675981-1b64ba3ecca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'}/>
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
            {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            */}<h1 className="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p className="leading-relaxed">It is clear by now, according to the statistics, that grid-powered homes will pay more next year for the same unreliable service.
+            */}<h1 className="title-font text-lg font-medium text-gray-900 mb-3">Count on Solar</h1>
+            <p className="leading-relaxed">It is clear by now, according to statistics, grid-power electric service will become more expensive and unreliable in the next upcoming years.
 
 
 </p>

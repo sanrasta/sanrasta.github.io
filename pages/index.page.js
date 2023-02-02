@@ -26,9 +26,7 @@ export default function Home() {
         <Hero 
           heading='Solar'
           message1=
-          'As sustainable energy is on the horizon.' 
-          message2=
-          ' Our purpose is to lower the carbon footprint by providing accessible solar solution,' 
+          'As sustainable energy is on the horizon, our purpose is to lower the carbon footprint by providing accessible solar solution,' 
           
           />
         
