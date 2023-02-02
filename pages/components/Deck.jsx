@@ -20,9 +20,7 @@ function Deck(){
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
            {/* <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
             */}<h1 className="title-font text-lg font-medium text-gray-900 mb-3">Count on Solar</h1>
-            <p className="leading-relaxed">It is clear by now, according to statistics, grid-power electric service will become more expensive and unreliable in the next upcoming years.
-
-
+            <p className="leading-relaxed">It is clear by now, according to statistics, grid-powered electric services will become more expensive and unreliable in the upcoming years.
 </p>
           </div>
         </div>
@@ -48,7 +46,6 @@ function Deck(){
           className="absolute inset-0 w-full h-full object-cover object-center" 
           src="https://images.unsplash.com/photo-1578439297699-eb414262c2de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80" />
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Clean Energy</h1>
             <p className="leading-relaxed">Solar, such an amazing energy.<br></br> Each installation produces clean energy for 30-40 years. Decreasing your home carbon footprint.</p>
           </div>
