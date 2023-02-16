@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useRef, useState } from 'react'
 import Hero from './Hero'
+import ReCAPTCHA from 'react-google-recaptcha';
 
 
 export const Form = () => {
@@ -15,10 +16,17 @@ export const Form = () => {
     const [isFormEmpty, setIsFormEmpty] = useState('');
 
 
-
+    
+        const [verified, SetVerified] = useState(false);
+        function onChange(value){
+            console.log("Captcha value:", value);
+        }
+    
 
 
     const formRef = useRef(null)
+    
+    
     const scriptUrl = "https://script.google.com/macros/s/AKfycbzL5gf4EUgqlA9iTaln8XYQD9b1iab3GjcAKmjgH9LxflpdG6uRRUXCeYSirjOwc78J/exec"
     const [loading, setLoading] = useState(false)
 
@@ -50,21 +58,22 @@ export const Form = () => {
         setInsurance('');
         setDescription('');
 
+
     }
 
-
+    
     return (
 
         <div id='contact' className='max-w-[1240px] m-auto p-4 h-screen relative'>
-            <h1 className='text-2xl font-bold text-center p-4'>Let&apos;s work together</h1>
+            <h1 className='text-2xl font-bold text-center p-4 py-12'>Let&apos;s work together</h1>
             <form
                 method="post"
                 action={scriptUrl}
                 ref={formRef}
                 onSubmit={handleSubmit}
                 name="google-sheet"
-                className='max-w-[600px] m-auto'>
-                <div className='grid grid-cols-2 gap-2'>
+                className='gmax-w-[600px] m-auto'>
+                <div className='g-recaptcha grid grid-cols-2 gap-2'>
                     <input
                         className='border shadow-lg p-3'
                         name="name"
@@ -130,18 +139,33 @@ export const Form = () => {
                 <p
                     className="p-4 text-green-500 align-middle text-center font-bold">{isFormEmpty}</p>
 
+                <ReCAPTCHA
+                    sitekey="6LefhIYkAAAAACT2QOvrDBGd3HokhetF9esqVlbJ"
+                    onChange={onChange}
+                    />
+                <button 
+                    className="g-recaptcha" 
+                    sitekey="6LefhIYkAAAAACT2QOvrDBGd3HokhetF9esqVlbJ" 
+                    type='submit'
+                    value='submit'>Send</button>
+                 
+                {/*
                 <input
                     className='border shadow-lg p-3 w-full mt-2 hover:shadow-black'
                     value="Send"
-                    type='submit'
-                    
-                  
+                    type='submit' 
                 />
+                <ReCAPTCHA
+                    sitekey={process.env.REACT_APP_SITE_KEY} 
+                    onChange={handleSubmit}
+                    />
+    */}
 
             </form>
+            
 
         </div>
-
+           
 
     )
 
