@@ -17,9 +17,11 @@ export const Form = () => {
 
 
     
-        const [verified, SetVerified] = useState(false);
+        const [verified, setVerified] = useState(false);
         function onChange(value){
             console.log("Captcha value:", value);
+            setVerified(true)
+
         }
     
 
@@ -65,7 +67,7 @@ export const Form = () => {
     return (
 
         <div id='contact' className='max-w-[1240px] m-auto p-4 h-screen relative'>
-            <h1 className='text-2xl font-bold text-center p-4 py-12'>Let&apos;s work together</h1>
+            <h1 className='text-2xl font-bold text-center p-4 py-1'>Let&apos;s work together</h1>
             <form
                 method="post"
                 action={scriptUrl}
@@ -144,9 +146,10 @@ export const Form = () => {
                     onChange={onChange}
                     />
                 <button 
-                    className="g-recaptcha" 
+                    className="g-recaptcha shadow-lg p-3 w-full mt-2 hover:shadow-black" 
                     sitekey="6LefhIYkAAAAACT2QOvrDBGd3HokhetF9esqVlbJ" 
                     type='submit'
+                    disabled={!verified}
                     value='submit'>Send</button>
                  
                 {/*
